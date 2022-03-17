@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding:15px;
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 70%;
+  }
+.column2 {
+  float: right;
+  width: 30%;
 }
+.column3 {
+  float: left;
+  width: 80%;
 
-tr:nth-child(even) {
-  background-color: #38dddddd;
-}
+ }
+.column4 {
+  float: right;
+  width: 20%;
+ }
+
+
+
 </style>
 </head>
 <body>
+<div class="row1">
+    <div class="column3">
+        <h1 style="color: red;">Stanford performing Arts</h1>
+    </div>
+    <div class="column4">
+        <h4 style="color: red; text-align: right;">Autumn 2012 <br>Edition</h4>
+    </div>
+</div>
 
-<h2>HTML Table</h2>
-
-<table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-</table>
+<div class="row1">
+    <div class="column1">
+        <h3>Bing Concert Hall</h3>
+        <p><img src="img1.jpg" alt="Bing Concert Hall" style="float:left;width:60%;">The Bing Concert Hall at Stanford will play a vital role on campus and in the local community. The hall's exceptional acoustics and state-of-the-art technical capabilities woll showcase the world's finest performers.</p>
+    </div>
+    <div class="column2">
+        <h3>Calendar</h3>
+        <hr width="100%">
+        <p>Harnony for Humanity: Daniel Pearl<br>World Music Concert</p>
+        <hr width="100%">
+        <p>Sundays with the St. Lawrence String<br>Quartet</p>
+        <hr width="100%">
+        <p>Merce Cunningham Dance Company</p>
+        <hr width="100%">
+        <p>Juilliard String Quartet</p>
+        <hr width="100%">
+    </div>
+</div>
 
 </body>
 </html>
-

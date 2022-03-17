@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  background-image: url('https://www.w3schools.com/html/example_img_girl.jpg');
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 </head>
 <body>
 
-<h2>Background Repeat</h2>
-
-<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+<div class="row">
+  <div class="column">
+    <h2>stanford researchers find a ba bla bla bla</h2>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  </div>
+  <div class="column">
+    <h2>Chance to dance: Enthusiasts ba bla bla bla</h2>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  </div>
+</div>
 
 </body>
 </html>
